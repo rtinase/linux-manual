@@ -1,7 +1,9 @@
 function Header() {
     return (
-        <header class="header">
+        <header>
 
         </header>
     )
 }
+
+export { Header };
