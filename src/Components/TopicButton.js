@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function TopicButton(props) {
     return (
         <Link to={props.link}>
