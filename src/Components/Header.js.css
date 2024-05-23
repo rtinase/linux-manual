@@ -1,7 +1,64 @@
 header {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-    width: 100 vw;
-    height: 5%;
+    background: rgb(18, 16, 54);
+    background: linear-gradient(90deg, rgba(18, 16, 54, 1) 0%, rgba(34, 34, 143, 1) 46%, rgba(3, 37, 106, 1) 100%);
+    width: 100vw;
+    height: 10vh;
+    min-height: 80px;
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-block {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+.search-icon {
+    width: 30px;
+    height: auto;
+    min-width: none;
+    color: white;
+}
+
+.title-section {
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.search-section p {
+    display: inline-block;
 }
