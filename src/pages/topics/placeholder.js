@@ -1,32 +1,24 @@
 import React from 'react';
-import './Layout.css'; // CSS-Datei für das Styling
+import './Layout.css';
 
-// Platzhalter-Komponenten für Author und Date
-const Author = () => <span>Author</span>;
-const Date = () => <span>Date</span>;
+const Placeholder = () => {
+    const title = "Titel";  // Set the title here
 
-const Layout = () => {
-  return (
-    <div className="container">
-      <div className="navbar">
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h3>h3</h3>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h3>h3</h3>
-      </div>
-      <div className="main-content">
-        <div className="title">Titel</div>
-        <div className="content-line"></div>
-        <div className="content-line"></div>
-        <div className="content-line"></div>
-        <div className="author">Written by <Author /> <Date /></div>
-      </div>
-    </div>
-  );
+    return (
+        <div className="container">
+            <div className="content">
+                <h1 className="title">{title}</h1>
+                <div className="info">
+                    <p>Info line 1</p>
+                    <p>Info line 2</p>
+                    <p>Info line 3</p>
+                </div>
+                <div className="author">
+                    Written by <span className="author-name">Test</span> <span className="date">30.05.2024</span>
+                </div>
+            </div>
+        </div>
+    );
 };
 
-export default Layout;
+export default Placeholder;
