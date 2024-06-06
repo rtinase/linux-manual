@@ -1,13 +1,13 @@
 import './App.css';
+import Header from './Components/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReactDOM from "react-dom/client";
-
-//import pages
 import BaseLayout from './pages/BaseLayout'
 
 function App() {
   return (
     <div className="App">
+      <Header></Header>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BaseLayout/>}>
