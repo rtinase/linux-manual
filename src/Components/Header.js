@@ -11,8 +11,8 @@ function Header() {
                     Linux Documentation
                 </div>
                 <div class="search-section">
+                    <input type="text" placeholder="Search"></input>
                     <img class="search-icon" src="./Data/search.png" alt="Logo"></img>
-                    <p>Search</p>
                 </div>
             </div>
 
