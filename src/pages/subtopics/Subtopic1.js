@@ -1,6 +1,6 @@
 // Beispielsweise in src/pages/subtopics/Subtopic1.js
 import React from 'react';
-import Breadcrumbs from '../../components/Breadcrumbs';
+import Breadcrumbs from '../../Components/Breadcrumbs.js';
 
 const Subtopic1 = () => {
   return (

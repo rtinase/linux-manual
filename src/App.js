@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
+import Sidebar from './Components/Sidebar';
 import RoutesConfig from './routes';
 
 const App = () => {

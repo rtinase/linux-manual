@@ -31,6 +31,13 @@
   border-left: 2px solid #e0e0e0;
 }
 
+.menu-item-title {
+  display: flex;
+  justify-content: space-between; /* Verteilt den Platz zwischen dem Link und dem Icon */
+  align-items: center;
+  cursor: pointer;
+}
+
 .menu-item a, .submenu-item a {
   color: #333;
   text-decoration: none;
@@ -71,7 +78,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grauer Schatten */
 }
 
-
 @media (max-width: 768px) {
   .sidebar-logo img {
     max-width: 80px; /* Kleineres Logo für kleinere Bildschirme */
@@ -111,4 +117,3 @@
   padding: 5px;
   transition: background 0.3s, transform 0.3s;
 }
-
