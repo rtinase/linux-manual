@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faLayerGroup, faDesktop, faCube, faBars, faMoon, faSun, faGlobe, faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLayerGroup, faDesktop, faCube, faBars, faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import content from '../content.json';
 import './Sidebar.css';
 
@@ -15,8 +15,6 @@ const icons = {
 const Sidebar = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [isOpen, setIsOpen] = useState(true);
-  const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState('EN');
   const [openTopics, setOpenTopics] = useState({});
 
   useEffect(() => {
