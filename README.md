@@ -39,7 +39,9 @@ git clone https://github.com/your_username_/linux-manual.git
 
 ```bash
 npm install
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
+
 
 3. Start the development server
 

@@ -1,0 +1,114 @@
+.sidebar {
+  width: 330px;
+  background: #ffffff; /* Weiße Hintergrundfarbe */
+  overflow-y: auto;
+  height: calc(100vh - 60px); /* Höhe anpassen, um Platz für Steuerelemente zu machen */
+  padding: 20px 0 0 0; /* Padding oben, Entfernen des Bottom-Padding */
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #e0e0e0; /* Subtiler rechter Rand */
+  z-index: 1000; /* Stellt sicher, dass die Sidebar über anderen Inhalten bleibt */
+  font-family: 'Roboto', sans-serif; /* Roboto als Standardschrift */
+  font-weight: 500; /* Mittlere Schriftstärke */
+}
+
+.sidebar.closed {
+  width: 20px; /* Reduzierte Breite, wenn geschlossen */
+}
+
+/* Stile für Menüelemente */
+.menu-item, .submenu-item {
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Sanfte Transition für Hintergrundfarbe und Transformation */
+  margin-left: 5px;
+}
+
+.nested-menu {
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.menu-item a, .submenu-item a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  font-size: 14px;
+  transition: color 0.3s, transform 0.3s; /* Sanfte Transition für Farbe und Skalierung */
+}
+
+.menu-item a:hover, .submenu-item a:hover {
+  background-color: #ff8541; /* Orange Farbe beim Hover */
+  color: #ffffff; /* Weißer Text beim Hover */
+  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+  border-radius: 5px; /* Runde Ecken beim Hover */
+  font-weight: bold;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+/* Grundstile für das Logo */
+.sidebar-logo img {
+  max-width: 150px; /* Anpassen nach Bedarf */
+  height: auto;
+  border-radius: 100px; /* Kreisförmiges Logo */
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Sanfte Transition für Vergrößerung und Schatten */
+}
+
+/* Hover-Effekte für das Logo */
+.sidebar-logo img:hover {
+  transform: scale(1.1); /* Vergrößert das Bild um 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grauer Schatten */
+}
+
+
+@media (max-width: 768px) {
+  .sidebar-logo img {
+    max-width: 80px; /* Kleineres Logo für kleinere Bildschirme */
+  }
+
+  .sidebar-logo img:hover {
+    transform: scale(1.05); /* Geringere Vergrößerung auf kleinen Bildschirmen */
+  }
+}
+
+.sidebar-controls {
+  position: absolute; /* Fixiert am unteren Rand */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: #333; /* Dunkler Hintergrund für die Schaltflächensektion */
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.1); /* Schatten für einen "schwebenden" Effekt */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.sidebar-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white; /* Weiße Textfarbe für bessere Sichtbarkeit */
+  font-size: 16px;
+}
+
+.sidebar-controls button:hover {
+  background: #555; /* Dunklerer Hintergrund beim Hover */
+  border-radius: 5px; /* Leicht abgerundete Ecken */
+  padding: 5px;
+  transition: background 0.3s, transform 0.3s;
+}
+
