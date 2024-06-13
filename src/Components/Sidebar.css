@@ -7,7 +7,7 @@
   transition: transform 0.3s ease-in-out;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 100px;
   border-right: 1px solid #e0e0e0; /* Subtiler rechter Rand */
   z-index: 1000; /* Stellt sicher, dass die Sidebar über anderen Inhalten bleibt */
   font-family: 'Roboto', sans-serif; /* Roboto als Standardschrift */
