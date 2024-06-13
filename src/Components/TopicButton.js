@@ -5,7 +5,7 @@ export default function TopicButton(props) {
         <Link to={props.link}>
             <div class="card">
                 <h3 class="topic-card-header">{props.title}</h3>
-                <p class="topic-card-descroption">{props.children}</p>
+                <p class="topic-card-description">{props.description}</p>
             </div>
         </Link>
     );
