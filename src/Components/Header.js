@@ -12,7 +12,9 @@ function Header() {
                 </div>
                 <div class="search-section">
                     <input type="text" placeholder="Search"></input>
-                    <img class="search-icon" src="./Data/search.png" alt="Logo"></img>
+                    <button class="find-button">
+                        <img class="search-icon" src="./Data/search.png" alt="Logo" />
+                    </button>
                 </div>
             </div>
 
