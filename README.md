@@ -25,7 +25,9 @@ To get a local copy up and running, follow these simple steps.
 
 ```bash
 npm install npm@latest -g
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
+
 
 ### Installation
 
@@ -39,7 +41,9 @@ git clone https://github.com/your_username_/linux-manual.git
 
 ```bash
 npm install
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 ```
+
 
 3. Start the development server
 

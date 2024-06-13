@@ -1,28 +1,25 @@
+// src/App.js
+import React, { useState } from 'react';
 import './App.css';
-import Header from './Components/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import ReactDOM from "react-dom/client";
-import BaseLayout from './pages/BaseLayout'
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import Sidebar from './Components/Sidebar';
+import RoutesConfig from './routes';
 
-function App() {
+const App = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
   return (
-    <div className="App">
-      <Header></Header>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<BaseLayout/>}>
-            <Route path="/home" element={<HomePage/>}></Route>
-            <Route path="/topic" element={<Topic/>}>
-              <Route path="/topic/article" element={<Article/>}></Route>
-            </Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <Router>
+      <div className="app">
+        <Sidebar isOpen={isSidebarOpen} toggle={() => setIsSidebarOpen(!isSidebarOpen)} />
+        <div className={`content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+          <Routes>
+            {RoutesConfig()}
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);

@@ -1,3 +1,13 @@
-.selector-for-some-widget {
-  box-sizing: content-box;
+.app {
+  display: flex;
+}
+
+.content {
+  transition: margin-left, margin-top 0.3s ease-in-out;
+  margin-left: 350px;
+  margin-top: 100px;
+}
+
+.sidebar.closed + .content {
+  margin-left: 0;
 }

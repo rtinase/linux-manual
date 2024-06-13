@@ -1,0 +1,43 @@
+.home-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .home-hero, .home-introduction, .home-getting-started, .home-tools,
+  .home-advanced-usage, .home-programming, .home-community {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .home-hero {
+    background: linear-gradient(to right, #ff8541, #ffa500);
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+  }
+  
+  .home-hero h1 {
+    font-size: 3em;
+  }
+  
+  section h2 {
+    color: #ff8541; /* Orange Farbe für Überschriften */
+    margin-top: 20px;
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .home-footer {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
