@@ -1,6 +1,6 @@
-import "./Header.js.css";
+import "./Header.css";
 
-function Header() {
+export default function Header() {
     return (
         <header>
             <div class="logo-block">
@@ -15,9 +15,6 @@ function Header() {
                     <img class="search-icon" src="./Data/search.png" alt="Logo"></img>
                 </div>
             </div>
-
         </header>
     )
 }
-
-export default Header;

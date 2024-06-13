@@ -38,10 +38,6 @@ const Home = () => {
         <h2>Die Linux-Gemeinschaft</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.</p>
       </section>
-
-      <footer className="home-footer">
-        <p>© 2024 Ihr Linux Handbuch Team. Alle Rechte vorbehalten.</p>
-      </footer>
     </div>
   );
 };
