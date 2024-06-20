@@ -19,7 +19,8 @@ function Header() {
     };
 
     const handleSearch = () => {
-        // Add your search handling logic here
+
+        window.location.href = "/";
     };
 
     const handleKeyPress = (event) => {
@@ -27,14 +28,21 @@ function Header() {
             handleSearch();
         }
     };
+    const getPages = () => {
+        const context = require.context('../pages', true, /\.js$/);
+        const keys = context.keys();
+        const fileNames = keys.map((key) => {
+            // Extract only the file name from the path
+            const parts = key.split('/');
+            const fileName = parts[parts.length - 1].replace('.js', '');
+            return fileName;
+        });
+        const uniqueFileNames = [...new Set(fileNames)];
+        return uniqueFileNames;
 
+    };
     const fetchSearchResults = (query) => {
-        const getPages = () => {
-            const context = require.context('../pages', true, /\.js$/);
-            const keys = context.keys();
-            const fileNames = keys.map((key) => key.replace('./', '').replace('.js', ''));
-            return fileNames;
-        };
+
 
         const allPages = getPages();
         const filteredResults = allPages.filter(page => page.toLowerCase().includes(query.toLowerCase()));
@@ -48,7 +56,7 @@ function Header() {
         <header>
             <div className="logo-block">
                 <div className="logo-section">
-                    <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked}/>
+                    <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked} />
                 </div>
                 <div className="title-section">
                     Linux Documentation
@@ -67,7 +75,7 @@ function Header() {
                     {showDropdown && (
                         <ul className="search-dropdown">
                             {searchResults.map((result, index) => (
-                                <li key={index} className="search-result">{result}</li>
+                                <li key={index} className="search-result" onClick={handleSearch}>{result}</li>
                             ))}
                         </ul>
                     )}
