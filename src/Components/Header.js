@@ -19,8 +19,7 @@ function Header() {
     };
 
     const handleSearch = () => {
-
-        window.location.href = "/";
+        // Handle search logic if needed
     };
 
     const handleKeyPress = (event) => {
@@ -28,6 +27,7 @@ function Header() {
             handleSearch();
         }
     };
+
     const getPages = () => {
         const context = require.context('../pages', true, /\.js$/);
         const keys = context.keys();
@@ -39,11 +39,9 @@ function Header() {
         });
         const uniqueFileNames = [...new Set(fileNames)];
         return uniqueFileNames;
-
     };
+
     const fetchSearchResults = (query) => {
-
-
         const allPages = getPages();
         const filteredResults = allPages.filter(page => page.toLowerCase().includes(query.toLowerCase()));
         return filteredResults.length > 0 ? filteredResults : ['No Result'];
@@ -52,6 +50,27 @@ function Header() {
     const onLogoClicked = () => {
         window.location.href = "/";
     };
+
+    const handleResultClick = (page) => {
+        // Assuming `page` is the name of the page to navigate to
+        const context = require.context('../pages', true, /\.js$/);
+        const keys = context.keys();
+        const getKey = (key) => {
+            const parts = key.split('/');
+            const fileName = parts[parts.length - 1].replace('.js', '');
+            return fileName;
+        }
+        if (page == "Home") {
+            window.location.href = "/";
+        }
+        keys.forEach(key => {
+            if (getKey(key) === page) {
+                window.location.href = `${key.toLowerCase().replace('.js', '')}`;
+            }
+        });
+        console.log(`/pages/${page}`);
+    };
+
     return (
         <header>
             <div className="logo-block">
@@ -75,7 +94,7 @@ function Header() {
                     {showDropdown && (
                         <ul className="search-dropdown">
                             {searchResults.map((result, index) => (
-                                <li key={index} className="search-result" onClick={handleSearch}>{result}</li>
+                                <li key={index} className="search-result" onClick={() => handleResultClick(result)}>{result}</li>
                             ))}
                         </ul>
                     )}
