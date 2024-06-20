@@ -35,7 +35,17 @@ header {
 .logo {
     width: 60px;
     height: auto;
+    position: absolute;
+    top: 10px;
+    left: 20px;
     border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .4);
+    transition: transform 200ms;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .search-icon {
@@ -47,6 +57,9 @@ header {
 
 .title-section {
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 75px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -67,6 +80,9 @@ header {
 
 .search-section {
     height: 100%;
+    position: absolute;
+    top: 0;
+    right: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

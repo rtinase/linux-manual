@@ -41,11 +41,14 @@ function Header() {
         return filteredResults.length > 0 ? filteredResults : ['No Result'];
     };
 
+    const onLogoClicked = () => {
+        window.location.href = "/";
+    };
     return (
         <header>
             <div className="logo-block">
                 <div className="logo-section">
-                    <img className="logo" src="./Data/logo.png" alt="Logo" />
+                    <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked}/>
                 </div>
                 <div className="title-section">
                     Linux Documentation
