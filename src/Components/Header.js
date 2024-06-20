@@ -3,7 +3,7 @@ import './Header.css'; // Assuming the CSS file is named Header.css
 import { useNavigate } from "react-router-dom";
 
 function Header() {
-    const [searchQuery, setSearchQuery] = useState('');
+    var [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [showDropdown, setShowDropdown] = useState(false);
     const navigate = useNavigate();
@@ -50,6 +50,8 @@ function Header() {
     };
 
     const handleResultClick = (page) => {
+        setSearchQuery("");
+        setShowDropdown(false);
         const context = require.context('../pages', true, /\.js$/);
         const keys = context.keys();
         const getKey = (key) => {
@@ -67,6 +69,7 @@ function Header() {
                 }
             });
         }
+
     };
 
     return (
@@ -81,12 +84,11 @@ function Header() {
                 <div className="search-section">
                     <input
                         type="text"
+                        id="search-input"
                         placeholder="Search"
                         value={searchQuery}
                         onChange={handleInputChange}
                     />
-                    <button className="find-button" onClick={handleResultClick}>
-                    </button>
                     {showDropdown && (
                         <ul className="search-dropdown">
                             {searchResults.map((result, index) => (
