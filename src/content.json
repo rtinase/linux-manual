@@ -7,65 +7,33 @@
       "unterthemen": []
     },
     {
-      "title": "Thema 1",
+      "title": "Benutzer",
       "icon": "faLayerGroup",
       "link": "/topics/topic1",
       "unterthemen": [
         {
-          "title": "Unterthema 1",
-          "link": "/subtopics/subtopic1",
+          "title": "Benutzer erstellen",
+          "link": "/subtopics/createuser",
           "unterthemen": [
             {
-              "title": "Endthema 1",
-              "link": "/undersubtopics/undersubtopic1",
+              "title": "useradd",
+              "link": "/undersubtopics/useradd",
+              "unterthemen": []
+            },{
+              "title": "adduser",
+              "link": "/undersubtopics/adduser",
               "unterthemen": []
             }
           ]
         },
         {
-          "title": "Unterthema 2",
-          "link": "/subtopics/subtopic2",
+          "title": "Benutzer anpassen",
+          "link": "/subtopics/usermod",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 3",
-          "link": "/subtopics/subtopic3",
-          "unterthemen": []
-        },
-        {
-          "title": "Unterthema 1-1",
-          "link": "/subtopics/subtopic1-1",
-          "unterthemen": [
-            {
-              "title": "Endthema 1-1-1",
-              "link": "/undersubtopics/undersubtopic1-1-1",
-              "unterthemen": []
-            },
-            {
-              "title": "Endthema 1-1-2",
-              "link": "/undersubtopics/undersubtopic1-1-2",
-              "unterthemen": []
-            },
-            {
-              "title": "Endthema 1-1-3",
-              "link": "/undersubtopics/undersubtopic1-1-3",
-              "unterthemen": []
-            }
-          ]
-        },
-        {
-          "title": "Unterthema 1-2",
-          "link": "/subtopics/subtopic1-2",
-          "unterthemen": []
-        },
-        {
-          "title": "Unterthema 1-3",
-          "link": "/subtopics/subtopic1-3",
-          "unterthemen": []
-        },
-        {
-          "title": "Unterthema 1-4",
-          "link": "/subtopics/subtopic1-4",
+          "title": "Benutzer löschen",
+          "link": "/subtopics/userdel",
           "unterthemen": []
         }
       ]
