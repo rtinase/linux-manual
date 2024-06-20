@@ -1,3 +1,15 @@
+@keyframes grow {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
 header {
     background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
     width: 100%;
@@ -87,11 +99,77 @@ input {
     margin-right: 10px;
     color: white;
     padding-left: 40px;
-
+    font-family: "Impact", serif;
     background: linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(255, 124, 0) 100.2%);
 }
 
 :placeholder-shown {
     color: white;
     font-family: "Impact", serif;
+}
+
+.find-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.search-dropdown {
+    overflow-y: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: absolute;
+    font-family: "Impact", serif;
+    background: linear-gradient(to right, #FF6347, #FFA500);
+    border: 0;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 60px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    transform-origin: top;
+    animation: grow 0.5s ease-out forwards;
+}
+
+.search-result {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #f0f0f0;
+}
+
+.search-dropdown::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Customize scrollbar track */
+.search-dropdown::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+/* Customize scrollbar thumb */
+.search-dropdown::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+/* Customize scrollbar thumb on hover */
+.search-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Customize scrollbar corner */
+.search-dropdown::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+    max-height: 30%;
 }

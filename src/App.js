@@ -12,16 +12,16 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header />
       <Router>
-          <Sidebar isOpen={isSidebarOpen} toggle={() => setIsSidebarOpen(!isSidebarOpen)} />
-          <div className={`content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
-            <Routes>
-              {RoutesConfig()}
-            </Routes>
-          </div>
+        <Header />
+        <Sidebar isOpen={isSidebarOpen} toggle={() => setIsSidebarOpen(!isSidebarOpen)} />
+        <div className={`content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
+          <Routes>
+            {RoutesConfig()}
+          </Routes>
+        </div>
       </Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
