@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Sidebar from './Components/Sidebar';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 import RoutesConfig from './routes';
 
 const App = () => {
