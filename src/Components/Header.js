@@ -1,18 +1,22 @@
 import "./Header.css";
 
 export default function Header() {
+    const onLogoClicked = () => {
+        window.location.href = "/";
+    };
+
     return (
         <header>
-            <div class="logo-block">
-                <div class="logo-section">
-                    <img class="logo" src="./Data/logo.png" alt="Logo"></img>
+            <div className="logo-block">
+                <div className="logo-section">
+                    <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked}></img>
                 </div>
-                <div class="title-section">
-                    Linux Documentation
+                <div className="title-section">
+                    Linux Handbuch
                 </div>
-                <div class="search-section">
+                <div className="search-section">
                     <input type="text" placeholder="Search"></input>
-                    <img class="search-icon" src="./Data/search.png" alt="Logo"></img>
+                    <img className="search-icon" src="./Data/search.png" alt="Search Icon"></img>
                 </div>
             </div>
         </header>
