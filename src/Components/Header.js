@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.js.css'; // Assuming the CSS file is named Header.css
+import './Header.css'; // Assuming the CSS file is named Header.css
 
 function Header() {
     const [searchQuery, setSearchQuery] = useState('');
