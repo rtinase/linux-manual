@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.js.css';
+import './Header.js.css'; // Assuming the CSS file is named Header.css
 
 function Header() {
     const [searchQuery, setSearchQuery] = useState('');
@@ -10,7 +10,6 @@ function Header() {
         const query = event.target.value;
         setSearchQuery(query);
         if (query) {
-            // Fetch or filter search results here
             const results = fetchSearchResults(query);
             setSearchResults(results);
             setShowDropdown(true);
@@ -20,8 +19,7 @@ function Header() {
     };
 
     const handleSearch = () => {
-
-        // You can replace this with an API call or other logic
+        // Add your search handling logic here
     };
 
     const handleKeyPress = (event) => {
@@ -31,16 +29,15 @@ function Header() {
     };
 
     const fetchSearchResults = (query) => {
-        // Mock function to simulate fetching search results
-        const pages = [
-            'Introduction to Linux',
-            'Linux Installation Guide',
-            'Basic Linux Commands',
-            'Linux File System',
-            'Advanced Linux Networking'
-        ];
+        const getPages = () => {
+            const context = require.context('../pages', true, /\.js$/);
+            const keys = context.keys();
+            const fileNames = keys.map((key) => key.replace('./', '').replace('.js', ''));
+            return fileNames;
+        };
 
-        const filteredResults = pages.filter(page => page.toLowerCase().includes(query.toLowerCase()));
+        const allPages = getPages();
+        const filteredResults = allPages.filter(page => page.toLowerCase().includes(query.toLowerCase()));
         return filteredResults.length > 0 ? filteredResults : ['No Result'];
     };
 

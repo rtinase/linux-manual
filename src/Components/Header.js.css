@@ -108,7 +108,7 @@ input {
     font-family: "Impact", serif;
     background: linear-gradient(to right, #FF6347, #FFA500);
     border: 0;
-    width: 200px;
+    width: 250px;
     max-height: 300px;
     overflow-y: auto;
     z-index: 1000;
