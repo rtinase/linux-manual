@@ -1,0 +1,9 @@
+.home-footer {
+    height: 10vh;
+    width: 100vw;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end; 
+}
