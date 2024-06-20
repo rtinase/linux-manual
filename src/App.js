@@ -12,8 +12,8 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header />
       <Router>
+        <Header />
         <Sidebar isOpen={isSidebarOpen} toggle={() => setIsSidebarOpen(!isSidebarOpen)} />
         <div className={`content ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
           <Routes>

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './Header.css'; // Assuming the CSS file is named Header.css
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [showDropdown, setShowDropdown] = useState(false);
+    const navigate = useNavigate();
 
     const handleInputChange = (event) => {
         const query = event.target.value;
@@ -18,13 +20,9 @@ function Header() {
         }
     };
 
-    const handleSearch = () => {
-        // Handle search logic if needed
-    };
-
     const handleKeyPress = (event) => {
         if (event.key === 'Enter') {
-            handleSearch();
+            handleResultClick();
         }
     };
 
@@ -52,7 +50,6 @@ function Header() {
     };
 
     const handleResultClick = (page) => {
-        // Assuming `page` is the name of the page to navigate to
         const context = require.context('../pages', true, /\.js$/);
         const keys = context.keys();
         const getKey = (key) => {
@@ -60,15 +57,16 @@ function Header() {
             const fileName = parts[parts.length - 1].replace('.js', '');
             return fileName;
         }
-        if (page == "Home") {
-            window.location.href = "/";
+        if (page === "Home") {
+            navigate("/");
         }
-        keys.forEach(key => {
-            if (getKey(key) === page) {
-                window.location.href = `${key.toLowerCase().replace('.js', '')}`;
-            }
-        });
-        console.log(`/pages/${page}`);
+        else {
+            keys.forEach(key => {
+                if (getKey(key) === page) {
+                    navigate(`${key.toLowerCase().replace('.js', '')}`);
+                }
+            });
+        }
     };
 
     return (
@@ -86,10 +84,8 @@ function Header() {
                         placeholder="Search"
                         value={searchQuery}
                         onChange={handleInputChange}
-                        onKeyPress={handleKeyPress}
                     />
-                    <button className="find-button" onClick={handleSearch}>
-                        <img className="search-icon" src="./Data/search.png" alt="Search Icon" />
+                    <button className="find-button" onClick={handleResultClick}>
                     </button>
                     {showDropdown && (
                         <ul className="search-dropdown">
