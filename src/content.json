@@ -9,7 +9,7 @@
     {
       "title": "Benutzer",
       "icon": "faLayerGroup",
-      "link": "/topics/topic1",
+      "link": "/topics/user",
       "unterthemen": [
         {
           "title": "Benutzer erstellen",
