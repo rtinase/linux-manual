@@ -33,8 +33,10 @@ header {
 }
 
 .logo {
-    width: 60px;
+    width: 6vh;
     height: auto;
+    margin-top: 1vh;
+    margin-left: 6vh;
     position: absolute;
     top: 10px;
     left: 20px;
@@ -59,7 +61,7 @@ header {
     height: 100%;
     position: absolute;
     top: 0;
-    left: 75px;
+    left: 16vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -101,6 +103,8 @@ input {
     padding-left: 40px;
     font-family: "Impact", serif;
     background: linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(255, 124, 0) 100.2%);
+    box-shadow: 0 4px 6px rgba(0.2, 0, 0, 0.2); /* Schatten */
+
 }
 
 :placeholder-shown {

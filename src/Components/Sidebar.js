@@ -1,7 +1,8 @@
+// src/Components/Sidebar.js
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faLayerGroup, faDesktop, faCube, faBars, faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faLayerGroup, faDesktop, faCube, faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import content from '../content.json';
 import './Sidebar.css';
 
@@ -12,16 +13,13 @@ const icons = {
   faCube: <FontAwesomeIcon icon={faCube} />
 };
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen }) => {
   const [menuItems, setMenuItems] = useState([]);
-  const [isOpen, setIsOpen] = useState(true);
   const [openTopics, setOpenTopics] = useState({});
 
   useEffect(() => {
     setMenuItems(content.hauptthemen);
   }, []);
-
-  const toggleSidebar = () => setIsOpen(!isOpen);
 
   const toggleTopic = (index) => {
     setOpenTopics(prevState => ({
@@ -56,14 +54,7 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
-      <div className="sidebar-logo">
-        <Link to="/">
-          <img src="/logo512.png" alt="Logo" />
-        </Link>
-      </div>
-      <button className="toggle-button" onClick={toggleSidebar}>
-        <FontAwesomeIcon icon={faBars} />
-      </button>
+      <div className="placeholder"></div>
       {renderMenuItems(menuItems)}
     </div>
   );

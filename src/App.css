@@ -3,11 +3,46 @@
 }
 
 .content {
-  transition: margin-left, margin-top 0.3s ease-in-out;
-  margin-left: 350px;
-  margin-top: 100px;
+  transition: margin-left 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+  margin-left: 36vh;
+  margin-top: 14vh;
 }
 
-.sidebar.closed + .content {
-  margin-left: 0;
+.sidebar-closed {
+  margin-left: 6vh;
+}
+
+/* Stile für den Scroll-to-Top-Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* Standardmäßig unsichtbar */
+  z-index: 1009;
+  visibility: hidden; /* Button nicht sichtbar */
+}
+
+.scroll-to-top.show {
+  opacity: 1; /* Sichtbar bei Scroll */
+  transform: translateY(0);
+  visibility: visible; /* Button sichtbar */
+}
+
+.scroll-to-top .fa-arrow-up {
+  font-size: 24px;
+  color: white;
+}
+
+.scroll-to-top:active {
+  transform: scale(0.9);
 }

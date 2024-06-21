@@ -12,10 +12,12 @@
   z-index: 1000; /* Stellt sicher, dass die Sidebar über anderen Inhalten bleibt */
   font-family: 'Roboto', sans-serif; /* Roboto als Standardschrift */
   font-weight: 500; /* Mittlere Schriftstärke */
+  transition: transform 0.3s ease;
+
 }
 
 .sidebar.closed {
-  width: 20px; /* Reduzierte Breite, wenn geschlossen */
+  transform: translateX(-330px); /* Verschiebt die Sidebar aus dem sichtbaren Bereich */
 }
 
 /* Stile für Menüelemente */
@@ -48,35 +50,24 @@
 }
 
 .menu-item a:hover, .submenu-item a:hover {
-  background-color: #ff8541; /* Orange Farbe beim Hover */
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
   color: #ffffff; /* Weißer Text beim Hover */
   transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
   border-radius: 5px; /* Runde Ecken beim Hover */
   font-weight: bold;
 }
 
-.sidebar-logo {
+.placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  width: 100%;
+  margin-top: 5vh;
+  width: auto;
 }
 
-/* Grundstile für das Logo */
-.sidebar-logo img {
-  max-width: 150px; /* Anpassen nach Bedarf */
-  height: auto;
-  border-radius: 100px; /* Kreisförmiges Logo */
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Sanfte Transition für Vergrößerung und Schatten */
-}
 
-/* Hover-Effekte für das Logo */
-.sidebar-logo img:hover {
-  transform: scale(1.1); /* Vergrößert das Bild um 10% */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grauer Schatten */
-}
+
+
 
 @media (max-width: 768px) {
   .sidebar-logo img {
@@ -116,4 +107,30 @@
   border-radius: 5px; /* Leicht abgerundete Ecken */
   padding: 5px;
   transition: background 0.3s, transform 0.3s;
+}
+
+.toggle-button {
+  position: fixed; /* Positioniert den Button immer oben links */
+  top: 11vh; /* Abstandsregelung von oben */
+  left: 1vh; /* Abstandsregelung von links */
+  width: 3vh;
+  height: 3vh;
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Animation beim Klicken */
+  z-index: 1001; /* Stellt sicher, dass der Button über der Sidebar bleibt */
+}
+
+.toggle-button:active {
+  transform: scale(0.9); /* Verkleinert den Button beim Klicken */
+}
+
+.toggle-button .fa-bars {
+  font-size: 20px;
+  color: white;
 }
