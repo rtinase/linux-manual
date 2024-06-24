@@ -1,7 +1,9 @@
+import './Article.css';
+
 export default function ArtileImage(props) {
     return(
-        <div class="article-image">
-            <img src={"/public/images."+props.src} alt={props.alt}/>
+        <div>
+            <img className="article-image" src={props.src.includes("http")? props.src : "/images/"+props.src} alt={props.alt}/>
         </div>
 
         //Anwendung
