@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
@@ -9,6 +8,11 @@ import RoutesConfig from './routes';
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  const onDarkmodeClicked = () => {
+    document.documentElement.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode');
+  };
 
   return (
     <div className="app">
@@ -22,6 +26,7 @@ const App = () => {
         </div>
       </Router>
       <Footer />
+      <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
     </div>
   );
 };

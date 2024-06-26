@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.css'; // Assuming the CSS file is named Header.css
+import './Header.css'; 
 import { useNavigate } from "react-router-dom";
 
 function Header() {
@@ -15,7 +15,8 @@ function Header() {
             const results = fetchSearchResults(query);
             setSearchResults(results);
             setShowDropdown(true);
-        } else {
+        } 
+        else {
             setShowDropdown(false);
         }
     };
@@ -69,7 +70,6 @@ function Header() {
                 }
             });
         }
-
     };
 
     return (
@@ -79,7 +79,7 @@ function Header() {
                     <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked} />
                 </div>
                 <div className="title-section">
-                    Linux Documentation
+                    Linux Handbuch
                 </div>
                 <div className="search-section">
                     <input
