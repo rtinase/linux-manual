@@ -1,7 +1,9 @@
+import './Article.css';
+
 export default function ArticlePara(props) {
     return (
-        <div class="article-para">
-            {props.children}
+        <div className='aritcle-para'>
+            <p>{props.children}</p>
         </div>
 
         //Anwendung

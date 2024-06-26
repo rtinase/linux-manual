@@ -5,5 +5,13 @@
     display: flex;
     flex-direction: row;
     align-items: end;
-    justify-content: end; 
-}
+    justify-content: end;
+  }
+  
+  /* Darkmode Style START */
+  .dark-mode .home-footer {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  /* Darkmode Style END */
+  

@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import './Components/Sidebar.css'; // Import Sidebar CSS here
@@ -37,6 +36,11 @@ const App = () => {
     };
   }, []);
 
+  const onDarkmodeClicked = () => {
+    document.documentElement.classList.toggle('dark-mode');
+    document.body.classList.toggle('dark-mode');
+  };
+
   return (
     <div className="app">
       <Router>
@@ -57,6 +61,7 @@ const App = () => {
         </button>
       </Router>
       <Footer />
+      <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
     </div>
   );
 };

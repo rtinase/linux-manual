@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&display=swap');
+
+hml, body {
+  font-family: "Baloo Thambi 2", system-ui;
+}
+
 .app {
-  display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
 .content {
@@ -11,6 +18,7 @@
 .sidebar-closed {
   margin-left: 6vh;
 }
+
 
 /* Stile für den Scroll-to-Top-Button */
 .scroll-to-top {
@@ -46,3 +54,79 @@
 .scroll-to-top:active {
   transform: scale(0.9);
 }
+
+/* Darkmode Style START */
+.dark-mode html, .dark-mode body, .dark-mode .app {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode .content h1,
+.dark-mode .content h2,
+.dark-mode .content h3,
+.dark-mode .content h4,
+.dark-mode .content h5,
+.dark-mode .content h6,
+.dark-mode .content caption {
+  color: #0026B9;
+}
+/* Darkmode Style END */
+
+.toggle_darkmode {
+  height: 40px;
+  width: 150px;
+  color: white;
+  position: fixed; /* Change to fixed to stay in place during scroll */
+  bottom: 2%;
+  left: 11%; /* Position at the bottom right corner */
+  z-index: 9999;
+  background-color: orange;
+  border: 3px solid orange;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px white;
+  text-shadow: 0 0 1px white;
+  transition: background-color 250ms, border 250ms, border-radius 250ms, text-shadow 200ms, box-shadow 200ms, color 200ms;
+}
+
+.toggle_darkmode:hover {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid orange;
+  text-shadow: 0 0 1px orange;
+  box-shadow: 1px 1px 10px orange;
+  color: orange;
+}
+
+/* Darkmode Style START */
+.dark-mode .sidebar {
+  background: #000000;
+  border-right: 1px solid #000000;
+}
+
+.dark-mode .menu-item a, .dark-mode .submenu-item a {
+  color: #ffffff;
+}
+
+.dark-mode .menu-item a:hover, .dark-mode .submenu-item a:hover {
+  background-color: #0026B9;
+  color: #ffffff;
+}
+
+.dark-mode .toggle_darkmode {
+  color: #000000;
+  background-color: #0026B9;
+  border: 3px solid #000000;
+  box-shadow: 1px 1px 5px #000000;
+  text-shadow: 0 0 1px #000000;
+}
+
+.dark-mode .toggle_darkmode:hover {
+  background-color: #000000;
+  border: 3px solid #0026B9;
+  text-shadow: 0 0 1px #0026B9;
+  box-shadow: 1px 1px 10px #0026B9;
+  color: #0026B9;
+}
+/* Darkmode Style END */
+

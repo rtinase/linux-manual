@@ -1,9 +1,9 @@
 .sidebar {
   width: 330px;
-  background: #ffffff; /* Weiße Hintergrundfarbe */
+  background: #ffffff;
   overflow-y: auto;
-  height: calc(100vh - 60px); /* Höhe anpassen, um Platz für Steuerelemente zu machen */
-  padding: 20px 0 0 0; /* Padding oben, Entfernen des Bottom-Padding */
+  height: calc(100vh - 60px);
+  padding: 20px 0 0 0;
   transition: transform 0.3s ease-in-out;
   position: fixed;
   left: 0;
@@ -18,13 +18,17 @@
 
 .sidebar.closed {
   transform: translateX(-330px); /* Verschiebt die Sidebar aus dem sichtbaren Bereich */
+  top: 10vh;
+  border-right: 1px solid #e0e0e0;
+  z-index: 1000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
-/* Stile für Menüelemente */
 .menu-item, .submenu-item {
   padding: 8px 20px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Sanfte Transition für Hintergrundfarbe und Transformation */
+  transition: background-color 0.3s, transform 0.3s;
   margin-left: 5px;
 }
 
@@ -35,7 +39,7 @@
 
 .menu-item-title {
   display: flex;
-  justify-content: space-between; /* Verteilt den Platz zwischen dem Link und dem Icon */
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
@@ -46,7 +50,7 @@
   display: block;
   padding: 5px 10px;
   font-size: 14px;
-  transition: color 0.3s, transform 0.3s; /* Sanfte Transition für Farbe und Skalierung */
+  transition: color 0.3s, transform 0.3s;
 }
 
 .menu-item a:hover, .submenu-item a:hover {
@@ -65,28 +69,36 @@
   width: auto;
 }
 
+.sidebar-logo img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 100px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
 
-
-
+.sidebar-logo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 768px) {
   .sidebar-logo img {
-    max-width: 80px; /* Kleineres Logo für kleinere Bildschirme */
+    max-width: 80px;
   }
 
   .sidebar-logo img:hover {
-    transform: scale(1.05); /* Geringere Vergrößerung auf kleinen Bildschirmen */
+    transform: scale(1.05);
   }
 }
 
 .sidebar-controls {
-  position: absolute; /* Fixiert am unteren Rand */
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 10px;
-  background: #333; /* Dunkler Hintergrund für die Schaltflächensektion */
-  box-shadow: 0 -4px 6px rgba(0,0,0,0.1); /* Schatten für einen "schwebenden" Effekt */
+  background: #333;
+  box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
@@ -98,13 +110,13 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: white; /* Weiße Textfarbe für bessere Sichtbarkeit */
+  color: white;
   font-size: 16px;
 }
 
 .sidebar-controls button:hover {
-  background: #555; /* Dunklerer Hintergrund beim Hover */
-  border-radius: 5px; /* Leicht abgerundete Ecken */
+  background: #555;
+  border-radius: 5px;
   padding: 5px;
   transition: background 0.3s, transform 0.3s;
 }
