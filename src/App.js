@@ -36,11 +36,6 @@ const App = () => {
     };
   }, []);
 
-  const onDarkmodeClicked = () => {
-    document.documentElement.classList.toggle('dark-mode');
-    document.body.classList.toggle('dark-mode');
-  };
-
   return (
     <div className="app">
       <Router>
@@ -54,14 +49,13 @@ const App = () => {
             {RoutesConfig()}
           </Routes>
         </div>
-        <button 
-          className={`scroll-to-top ${showScrollToTop ? 'show' : ''}`} 
+        <button
+          className={`scroll-to-top ${showScrollToTop ? 'show' : ''}`}
           onClick={scrollToTop}>
           <FontAwesomeIcon icon={faArrowUp} />
         </button>
       </Router>
       <Footer />
-      <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
     </div>
   );
 };
