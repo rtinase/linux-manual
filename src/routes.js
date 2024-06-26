@@ -13,6 +13,7 @@ import Adduser from './pages/undersubtopics/Adduser';
 import Createuser from './pages/subtopics/Createuser';
 import Usermod from './pages/subtopics/Usermod'
 import Userdel from './pages/subtopics/Userdel';
+import User from './pages/topics/User';
 
 const RoutesConfig = () => (
   <React.Fragment>
@@ -28,6 +29,7 @@ const RoutesConfig = () => (
     <Route path="/subtopics/createuser" element={<Createuser />} />
     <Route path="/subtopics/usermod" element={<Usermod />} />
     <Route path="/subtopics/userdel" element={<Userdel />} />
+    <Route path="/topics/user" element={<User />} />
 
   </React.Fragment>
 );
