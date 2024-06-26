@@ -7,15 +7,22 @@
   transition: transform 0.3s ease-in-out;
   position: fixed;
   left: 0;
+  top: 12vh;
+  border-right: 1px solid #e0e0e0; /* Subtiler rechter Rand */
+  z-index: 1000; /* Stellt sicher, dass die Sidebar über anderen Inhalten bleibt */
+  font-family: 'Roboto', sans-serif; /* Roboto als Standardschrift */
+  font-weight: 500; /* Mittlere Schriftstärke */
+  transition: transform 0.3s ease;
+
+}
+
+.sidebar.closed {
+  transform: translateX(-330px); /* Verschiebt die Sidebar aus dem sichtbaren Bereich */
   top: 10vh;
   border-right: 1px solid #e0e0e0;
   z-index: 1000;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-}
-
-.sidebar.closed {
-  width: 20px;
 }
 
 .menu-item, .submenu-item {
@@ -47,20 +54,19 @@
 }
 
 .menu-item a:hover, .submenu-item a:hover {
-  background-color: #ff8541;
-  color: #ffffff;
-  transform: scale(1.05);
-  border-radius: 5px;
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+  color: #ffffff; /* Weißer Text beim Hover */
+  transform: scale(1.05); /* Leichte Vergrößerung beim Hover */
+  border-radius: 5px; /* Runde Ecken beim Hover */
   font-weight: bold;
 }
 
-.sidebar-logo {
+.placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  width: 100%;
+  margin-top: 5vh;
+  width: auto;
 }
 
 .sidebar-logo img {
@@ -113,4 +119,30 @@
   border-radius: 5px;
   padding: 5px;
   transition: background 0.3s, transform 0.3s;
+}
+
+.toggle-button {
+  position: fixed; /* Positioniert den Button immer oben links */
+  top: 11vh; /* Abstandsregelung von oben */
+  left: 1vh; /* Abstandsregelung von links */
+  width: 3vh;
+  height: 3vh;
+  background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease; /* Animation beim Klicken */
+  z-index: 1001; /* Stellt sicher, dass der Button über der Sidebar bleibt */
+}
+
+.toggle-button:active {
+  transform: scale(0.9); /* Verkleinert den Button beim Klicken */
+}
+
+.toggle-button .fa-bars {
+  font-size: 20px;
+  color: white;
 }
