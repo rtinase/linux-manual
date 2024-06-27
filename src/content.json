@@ -39,45 +39,106 @@
       ]
     },
     {
-      "title": "Thema 2",
+      "title": "Dateisystem",
       "icon": "faLayerGroup",
-      "link": "/topics/topic2",
+      "link": "/topics/directory",
       "unterthemen": [
         {
-          "title": "Unterthema 2-1",
-          "link": "/subtopics/subtopic21",
+          "title": "Aufbau",
+          "link": "/subtopics/structure",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 2-1",
-          "link": "/subtopics/subtopic2-1",
+          "title": "Wichtige Verzeichnisse",
+          "link": "/subtopics/important-directorys",
           "unterthemen": [
             {
-              "title": "Endthema 2-1-1",
-              "link": "/undersubtopics/undersubtopic2-1-1",
+              "title": "/ (root)",
+              "link": "/undersubtopics/root",
+              "unterthemen": []
+            }
+          ,
+            {
+              "title": "/boot",
+              "link": "/undersubtopics/boot",
+              "unterthemen": []
+            },
+            {
+              "title": "/etc",
+              "link": "/undersubtopics/boot",
+              "unterthemen": []
+            },
+            {
+              "title": "/home",
+              "link": "/undersubtopics/home",
+              "unterthemen": []
+            },
+            {
+              "title": "/dev",
+              "link": "/undersubtopics/dev",
+              "unterthemen": []
+            },
+            {
+              "title": "/bin",
+              "link": "/undersubtopics/bin",
+              "unterthemen": []
+            },
+            {
+              "title": "/usr",
+              "link": "/undersubtopics/usr",
+              "unterthemen": []
+            },
+            {
+              "title": "/proc",
+              "link": "/undersubtopics/proc",
+              "unterthemen": []
+            },
+            {
+              "title": "/mnt",
+              "link": "/undersubtopics/mnt",
+              "unterthemen": []
+            },
+            {
+              "title": "/sys",
+              "link": "/undersubtopics/sys",
+              "unterthemen": []
+            },
+            {
+              "title": "/tmp",
+              "link": "/undersubtopics/tmp",
               "unterthemen": []
             }
           ]
         },
         {
-          "title": "Unterthema 2-2",
-          "link": "/subtopics/subtopic2-2",
+          "title": "Befehle im CMD",
+          "link": "/subtopics/DirPromts",
+          "unterthemen": [{
+            "title": "Navigation",
+            "link": "/undersubtopics/nav",
+            "unterthemen": []
+          },
+          {
+            "title": "Erstellen",
+            "link": "/undersubtopics/createFile",
+            "unterthemen": []
+          }
+        ]
+        },
+        {
+          "title": "Dateiverwaltung",
+          "link": "/subtopics/chmod",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 2-3",
-          "link": "/subtopics/subtopic2-3",
-          "unterthemen": []
-        },
-        {
-          "title": "Unterthema 2-4",
-          "link": "/subtopics/subtopic2-4",
+          "title": "Alles löschen",
+          "link": "/subtopics/rm",
           "unterthemen": []
         }
       ]
     },
     {
-      "title": "Thema 3",
+      "title": "Befehle im CMD",
       "icon": "faLayerGroup",
       "link": "/topics/topic3",
       "unterthemen": [
@@ -87,30 +148,84 @@
           "unterthemen": []
         },
         {
-          "title": "Unterthema 3-2",
+          "title": "",
           "link": "/subtopics/subtopic3-2",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 3-3",
+          "title": "Operatoren",
           "link": "/subtopics/subtopic3-3",
-          "unterthemen": []
+          "unterthemen": [ {
+            "title": "|",
+            "link": "/undersubtopics/undersubtopic3-4-1",
+            "unterthemen": []
+          },
+          {
+            "title": ">",
+            "link": "/undersubtopics/undersubtopic3-4-2",
+            "unterthemen": []
+          },{
+            "title": ">>",
+            "link": "/undersubtopics/undersubtopic3-4-1",
+            "unterthemen": []
+          }]
         },
         {
-          "title": "Unterthema 3-4",
+          "title": "Herunterfahren & Reboot",
           "link": "/subtopics/subtopic3-4",
           "unterthemen": [
             {
-              "title": "Endthema 3-4-1",
+              "title": "Herunterfahren",
               "link": "/undersubtopics/undersubtopic3-4-1",
               "unterthemen": []
             },
             {
-              "title": "Endthema 3-4-2",
+              "title": "Reboot",
               "link": "/undersubtopics/undersubtopic3-4-2",
               "unterthemen": []
             }
           ]
+        }
+      ]
+    },{
+      "title": "Distributionen und Geschichte",
+      "icon": "faLayerGroup",
+      "link": "/topics/user",
+      "unterthemen": [
+        {
+          "title": "Das erste Linux Betriebssystem",
+          "link": "/subtopics/firstDistribution",
+          "unterthemen": []
+        },
+        {
+          "title": "Linus Torvalds",
+          "link": "/subtopics/LinusTorvalds",
+          "unterthemen": []
+        },{
+          "title": "Distributionen",
+          "link": "/subtopics/kali",
+          "unterthemen": [{
+            "title": "Debian",
+            "link": "/subtopics/kali",
+            "unterthemen": []
+          },
+          {
+            "title": "Ubuntu",
+            "link": "/subtopics/ubuntu",
+            "unterthemen": []
+          },{
+            "title": "Mint",
+            "link": "/subtopics/mint",
+            "unterthemen": []
+          },{
+            "title": "Kali",
+            "link": "/subtopics/kali",
+            "unterthemen": []
+          },{
+            "title": "Arch Linux",
+            "link": "/subtopics/arch",
+            "unterthemen": []
+          }]
         }
       ]
     }
