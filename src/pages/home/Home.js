@@ -6,7 +6,6 @@ const Home = () => {
     <div className="home-container">
       <section className="home-hero">
         <h1>Willkommen im Linux Handbuch</h1>
-        <p>Home</p>
       </section>
       
       <section className="home-introduction">
