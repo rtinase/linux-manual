@@ -1,12 +1,13 @@
 import React from 'react';
 import ArticelPara from '../../Components/ArticlePara';
 import ArticelSubtitle from '../../Components/ArticleSubtitle';
+import ArticleTitle from '../../Components/ArticleTitle'
 // Beispielsweise in src/pages/subtopics/Subtopic1.js
 
 const User = () => {
   return (
     <div>
-      <h1>Linux Benutzerverwaltung: Erstellen, Anpassen und Löschen von Benutzerkonten</h1>
+      <ArticleTitle>Linux Benutzerverwaltung: Erstellen, Anpassen und Löschen von Benutzerkonten</ArticleTitle>
       <br />
       <ArticelPara>Dieser umfassende Leitfaden führt Sie durch die wesentlichen Schritte der Benutzerverwaltung auf einem Linux-System. Von der Erstellung neuer Benutzerkonten bis hin zur Anpassung bestehender und dem endgültigen Löschen nicht mehr benötigter Konten, deckt dieser Bericht alle wichtigen Aspekte ab. Lernen Sie, wie Sie mit den Befehlen useradd, adduser und usermod effektiv arbeiten und Ihr System optimal verwalten.</ArticelPara>
       <br />
