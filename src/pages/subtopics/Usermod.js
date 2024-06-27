@@ -2,11 +2,12 @@ import React from "react";
 import ArticleCode from "../../Components/ArticleCode";
 import ArticlePara from "../../Components/ArticlePara";
 import ArticleSubtitle from "../../Components/ArticleSubtitle";
+import ArticleTitle from '../../Components/ArticleTitle'
 
 const Usermod = () => {
   return (
     <div>
-      <h1>Benutzer anpassen</h1>
+      <ArticleTitle>Benutzer anpassen</ArticleTitle>
 
       <ArticlePara>
         Nachdem Sie einen Benutzer erstellt haben, möchten Sie möglicherweise

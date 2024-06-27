@@ -4,12 +4,13 @@ import ArticelPara from '../../Components/ArticlePara';
 import ArticelSubtitle from '../../Components/ArticleSubtitle';
 import Adduser from '../undersubtopics/Adduser';
 import Useradd from '../undersubtopics/Useradd';
+import ArticleTitle from '../../Components/ArticleTitle'
 // Beispielsweise in src/pages/subtopics/Subtopic1.js
 
 const Createuser = () => {
   return (
     <div>
-      <h1>Benutzer erstellen </h1>
+      <ArticleTitle>Benutzer erstellen </ArticleTitle>
       <ArticelPara>Möchten Sie einen weiteren Benutzer auf ihrem Linux Gerät? Kein Problem, hier zeigen wir Ihnen zwei Wege wie es geht.</ArticelPara>
       <br />
       <ArticelSubtitle>Kurzfassung</ArticelSubtitle>

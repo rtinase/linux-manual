@@ -3,12 +3,14 @@ import React from 'react';
 import ArticlePara from '../../Components/ArticlePara'; 
 import ArticleSubtitle from '../../Components/ArticleSubtitle';
 import ArticleCode from '../../Components/ArticleCode';
+import ArticleTitle from '../../Components/ArticleTitle';
+import ArticleImage from '../../Components/ArticleImage';
 
 const Useradd = () => {
   return (
   
     <div>
-     <h2>Benutzer erstellen mit useradd</h2>
+     <ArticleTitle>Benutzer erstellen mit useradd</ArticleTitle>
       <ArticlePara>Useradd ist ein leichter Befehl der Benutzt wird, um einen Benutzer zu erstellen. Um gut mit Useradd zu arbeiten, braucht man verschiedene Parameter. Gegenteilig zum addUser befehl, wird wenig selbst erstellt. </ArticlePara>
       <ArticleSubtitle>Um einen einfachen Benutzer zu erstellen, schreiben wir das: </ArticleSubtitle>
       <br />
@@ -29,7 +31,7 @@ const Useradd = () => {
       <ArticleCode>useradd -m -d /testordner -e 2025-1-1 -s /bin/bash test</ArticleCode>
       <br />
       <br />
-      <img alt="Bild von Terminal" src='https://media.geeksforgeeks.org/wp-content/uploads/20200521030422/useradd-help-section.png'/>
+      <ArticleImage alt="Bild von Terminal" src='https://media.geeksforgeeks.org/wp-content/uploads/20200521030422/useradd-help-section.png'/>
       <br />
       <br />
       <ArticlePara>Das war ein kleiner Guide zum Erstellen eines Benutzers mit dem useradd-Befehl. Wir hoffen, dass wir Ihnen damit weiterhelfen konnten und dass die beschriebenen Schritte für Sie nützlich und verständlich waren.</ArticlePara>
