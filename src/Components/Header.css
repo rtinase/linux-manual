@@ -82,6 +82,13 @@ header {
     align-items: center;
 }
 
+.right-position {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .search-section {
     height: 100%;
     position: absolute;
@@ -207,11 +214,9 @@ input {
 
 .toggle_darkmode {
     height: 40px;
-    width: 150px;
     color: white;
-    bottom: 2%;
-    left: 11%;
     z-index: 9999;
+    margin-right: 20%;
     background-color: orange;
     border: 3px solid orange;
     border-radius: 10px;

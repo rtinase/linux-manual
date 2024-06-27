@@ -86,22 +86,24 @@ function Header() {
                 <div className="title-section">
                     Linux Handbuch
                 </div>
-                <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
-                <div className="search-section">
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Search"
-                        value={searchQuery}
-                        onChange={handleInputChange}
-                    />
-                    {showDropdown && (
-                        <ul className="search-dropdown">
-                            {searchResults.map((result, index) => (
-                                <li key={index} className="search-result" onClick={() => handleResultClick(result)}>{result}</li>
-                            ))}
-                        </ul>
-                    )}
+                <div class="right-position">
+                    <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
+                    <div className="search-section">
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Search"
+                            value={searchQuery}
+                            onChange={handleInputChange}
+                        />
+                        {showDropdown && (
+                            <ul className="search-dropdown">
+                                {searchResults.map((result, index) => (
+                                    <li key={index} className="search-result" onClick={() => handleResultClick(result)}>{result}</li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>
