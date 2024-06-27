@@ -2,12 +2,13 @@ import React from 'react';
 import ArticelCode from '../../Components/ArticleCode';
 import ArticelPara from '../../Components/ArticlePara';
 import ArticelSubtitle from '../../Components/ArticleSubtitle';
+import ArticleTitle from '../../Components/ArticleTitle'
 // Beispielsweise in src/pages/subtopics/Subtopic1.js
 
 const Userdel = () => {
   return (
     <div>
-      <h1>Benutzer löschen</h1>
+      <ArticleTitle>Benutzer löschen</ArticleTitle>
       <ArticelPara>Wenn ein Benutzerkonto nicht mehr benötigt wird, können Sie es mit dem Befehl userdel löschen. Es gibt verschiedene Optionen, die Sie dabei verwenden können: </ArticelPara>
       <br />
       <ArticelSubtitle>Einfaches Löschen eines Benutzers </ArticelSubtitle>
