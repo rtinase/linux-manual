@@ -2,7 +2,7 @@
   width: 330px;
   background: #ffffff;
   overflow-y: auto;
-  height: calc(100vh - 60px);
+  height: 90vh;
   padding: 20px 0 0 0;
   transition: transform 0.3s ease-in-out;
   position: fixed;
@@ -122,9 +122,9 @@
 }
 
 .toggle-button {
-  position: fixed; /* Positioniert den Button immer oben links */
-  top: 11vh; /* Abstandsregelung von oben */
-  left: 1vh; /* Abstandsregelung von links */
+  position: fixed;
+  top: 11vh;
+  left: 1vh;
   width: 3vh;
   height: 3vh;
   background: linear-gradient(99deg, rgb(255, 166, 0) 14.7%, rgb(255, 99, 97) 73%);
@@ -134,12 +134,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease; /* Animation beim Klicken */
-  z-index: 1001; /* Stellt sicher, dass der Button über der Sidebar bleibt */
+  transition: transform 0.3s ease;
+  z-index: 1001;
 }
 
 .toggle-button:active {
-  transform: scale(0.9); /* Verkleinert den Button beim Klicken */
+  transform: scale(0.9);
 }
 
 .toggle-button .fa-bars {
