@@ -143,29 +143,24 @@
       "link": "/topics/topic3",
       "unterthemen": [
         {
-          "title": "Unterthema 3-1",
-          "link": "/subtopics/subtopic3-1",
-          "unterthemen": []
-        },
-        {
-          "title": "",
-          "link": "/subtopics/subtopic3-2",
+          "title": "Task auf Port ... beenden",
+          "link": "/subtopics/subtopic3-3",
           "unterthemen": []
         },
         {
           "title": "Operatoren",
           "link": "/subtopics/subtopic3-3",
           "unterthemen": [ {
-            "title": "|",
+            "title": "| Pipe",
             "link": "/undersubtopics/undersubtopic3-4-1",
             "unterthemen": []
           },
           {
-            "title": ">",
+            "title": "> Umleitung",
             "link": "/undersubtopics/undersubtopic3-4-2",
             "unterthemen": []
           },{
-            "title": ">>",
+            "title": ">> Umleitung",
             "link": "/undersubtopics/undersubtopic3-4-1",
             "unterthemen": []
           }]
@@ -187,7 +182,9 @@
           ]
         }
       ]
-    },{
+    }
+    
+    ,{
       "title": "Distributionen und Geschichte",
       "icon": "faLayerGroup",
       "link": "/topics/user",
@@ -227,7 +224,28 @@
             "unterthemen": []
           }]
         }
-      ]
+      ]    
+    },{
+      "title": "Packete",
+      "icon": "faLayerGroup",
+      "link": "/topics/user",
+      "unterthemen": [
+        {
+          "title": "Was sind Packete?",
+          "link": "/subtopics/kali",
+          "unterthemen": []
+        },
+        {
+          "title": "Packete installieren",
+          "link": "/subtopics/firstDistribution",
+          "unterthemen": []
+        },
+        {
+          "title": "Pakete löschen",
+          "link": "/subtopics/LinusTorvalds",
+          "unterthemen": []
+        }
+      ]    
     }
   ]
 }
