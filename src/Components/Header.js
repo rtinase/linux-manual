@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Header.css'; 
+import './Header.css';
 import { useNavigate } from "react-router-dom";
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
             const results = fetchSearchResults(query);
             setSearchResults(results);
             setShowDropdown(true);
-        } 
+        }
         else {
             setShowDropdown(false);
         }
@@ -72,6 +72,11 @@ function Header() {
         }
     };
 
+    const onDarkmodeClicked = () => {
+        document.documentElement.classList.toggle('dark-mode');
+        document.body.classList.toggle('dark-mode');
+    };
+
     return (
         <header>
             <div className="logo-block">
@@ -81,21 +86,24 @@ function Header() {
                 <div className="title-section">
                     Linux Handbuch
                 </div>
-                <div className="search-section">
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Search"
-                        value={searchQuery}
-                        onChange={handleInputChange}
-                    />
-                    {showDropdown && (
-                        <ul className="search-dropdown">
-                            {searchResults.map((result, index) => (
-                                <li key={index} className="search-result" onClick={() => handleResultClick(result)}>{result}</li>
-                            ))}
-                        </ul>
-                    )}
+                <div class="right-position">
+                    <button onClick={onDarkmodeClicked} className="toggle_darkmode">Toggle Darkmode</button>
+                    <div className="search-section">
+                        <input
+                            type="text"
+                            id="search-input"
+                            placeholder="Search"
+                            value={searchQuery}
+                            onChange={handleInputChange}
+                        />
+                        {showDropdown && (
+                            <ul className="search-dropdown">
+                                {searchResults.map((result, index) => (
+                                    <li key={index} className="search-result" onClick={() => handleResultClick(result)}>{result}</li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
                 </div>
             </div>
         </header>
