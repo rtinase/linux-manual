@@ -10,32 +10,32 @@ const Home = () => {
       
       <section className="home-introduction">
         <h2>Einführung in Linux</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p>Linux ist ein vielseitiges und leistungsstarkes Betriebssystem, das in vielen Bereichen Anwendung findet. Es bietet Stabilität, Sicherheit und eine hohe Anpassungsfähigkeit.</p>
       </section>
 
       <section className="home-getting-started">
         <h2>Erste Schritte</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet purus quis metus imperdiet, et ultricies sapien tincidunt. Curabitur ac felis in turpis pharetra convallis. Ut non nisi tellus.</p>
+        <p>Um mit Linux zu beginnen, installieren Sie eine Distribution wie Ubuntu oder Fedora. Lernen Sie grundlegende Befehle und erkunden Sie die grafische Benutzeroberfläche.</p>
       </section>
 
       <section className="home-tools">
         <h2>Unentbehrliche Werkzeuge</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus. Phasellus scelerisque sapien turpis, at feugiat lorem tincidunt a.</p>
+        <p>Zu den unverzichtbaren Tools unter Linux gehören der Paketmanager, der Terminal-Emulator und Editoren wie Vim oder Nano. Diese helfen Ihnen, effizient zu arbeiten.</p>
       </section>
 
       <section className="home-advanced-usage">
         <h2>Fortgeschrittene Techniken</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar, nunc sit amet aliquam aliquet, urna nisl luctus tortor, vel vestibulum dolor mauris in felis.</p>
+        <p>Fortgeschrittene Benutzer können Linux durch das Schreiben von Shell-Skripten und die Nutzung von Automatisierungstools wie Ansible oder Puppet noch leistungsfähiger machen.</p>
       </section>
 
       <section className="home-programming">
         <h2>Programmieren unter Linux</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id arcu aliquet, elementum nisi quis, condimentum nibh.</p>
+        <p>Linux bietet eine hervorragende Umgebung für Programmierer, mit Unterstützung für zahlreiche Programmiersprachen und Entwicklungswerkzeuge wie GCC, Git und Docker.</p>
       </section>
 
       <section className="home-community">
         <h2>Die Linux-Gemeinschaft</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.</p>
+        <p>Die Linux-Gemeinschaft ist aktiv und unterstützend. Sie können an Foren, Mailinglisten und lokalen Benutzergruppen teilnehmen, um Hilfe zu erhalten und sich weiterzubilden.</p>
       </section>
     </div>
   );
