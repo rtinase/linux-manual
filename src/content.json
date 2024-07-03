@@ -187,40 +187,40 @@
     ,{
       "title": "Distributionen und Geschichte",
       "icon": "faLayerGroup",
-      "link": "/topics/user",
+      "link": "/topics/directory",
       "unterthemen": [
         {
           "title": "Das erste Linux Betriebssystem",
-          "link": "/subtopics/firstDistribution",
+          "link": "/subtopics/erstes-Linux",
           "unterthemen": []
         },
         {
           "title": "Linus Torvalds",
-          "link": "/subtopics/LinusTorvalds",
+          "link": "/subtopics/Linus-Torvalds",
           "unterthemen": []
         },{
           "title": "Distributionen",
-          "link": "/subtopics/kali",
+          "link": "/subtopics/Distributionen",
           "unterthemen": [{
             "title": "Debian",
-            "link": "/subtopics/kali",
+            "link": "/undersubtopics/Debian",
             "unterthemen": []
           },
           {
             "title": "Ubuntu",
-            "link": "/subtopics/ubuntu",
+            "link": "/undersubtopics/Ubuntu",
             "unterthemen": []
           },{
             "title": "Mint",
-            "link": "/subtopics/mint",
+            "link": "/undersubtopics/Mint",
             "unterthemen": []
           },{
             "title": "Kali",
-            "link": "/subtopics/kali",
+            "link": "/undersubtopics/Kali",
             "unterthemen": []
           },{
             "title": "Arch Linux",
-            "link": "/subtopics/arch",
+            "link": "/undersubtopics/Arch",
             "unterthemen": []
           }]
         }
