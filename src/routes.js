@@ -34,6 +34,18 @@ import WhatArePackages from './pages/subtopics/WhatArePackages';
 import AptInstall from './pages/subtopics/AptInstall';
 import AptRemove from './pages/subtopics/AptRemove';
 
+//Terminal
+import Terminal from './pages/topics/Terminal';
+import TerminalRolle from './pages/subtopics/TerminalRolle';
+import TaskBeenden from './pages/subtopics/KillTask';
+import Operatoren from './pages/subtopics/Operatoren';
+import PipeOperator from './pages/undersubtopics/PipeOperator';
+import UmleitungOperator from './pages/undersubtopics/UmleitungOperatorCreate';
+import UmleitungAppendOperator from './pages/undersubtopics/UmleitungOperatorAppend';
+import HerunterfahrenReboot from './pages/subtopics/PowerOptions';
+import Shutdown from './pages/undersubtopics/shutdown';
+import Reboot from './pages/undersubtopics/Reboot';
+
 const RoutesConfig = () => (
   <React.Fragment>
     <Route path="/" element={<Home />} />
@@ -65,6 +77,18 @@ const RoutesConfig = () => (
     <Route path="/subtopics/package-info" element={<WhatArePackages />} />
     <Route path="/subtopics/package-install" element={<AptInstall />} />
     <Route path="/subtopics/package-remove" element={<AptRemove />} />
+
+    <Route path="/topics/terminal" element={<Terminal />} />
+    <Route path="/subtopics/terminal-info" element={<TerminalRolle />} />
+    <Route path="/subtopics/stop-task" element={<TaskBeenden />} />
+    <Route path="/subtopics/operatoren" element={<Operatoren />} />
+    <Route path="/undersubtopics/pipe" element={<PipeOperator />} />
+    <Route path="/undersubtopics/umleitung-erstellen" element={<UmleitungOperator />} />
+    <Route path="/undersubtopics/umleitung-hinzufügen" element={<UmleitungAppendOperator />} />
+    <Route path="/subtopics/herunterfahren-reboot" element={<HerunterfahrenReboot />} />
+    <Route path="/undersubtopics/shut-down" element={<Shutdown />} />
+    <Route path="/undersubtopics/reboot" element={<Reboot />} />
+
 
   </React.Fragment>
 );

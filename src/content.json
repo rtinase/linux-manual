@@ -111,7 +111,7 @@
           ]
         },
         {
-          "title": "Befehle im CMD",
+          "title": "Befehle im Terminal",
           "link": "/subtopics/DirPromts",
           "unterthemen": [{
             "title": "Navigation",
@@ -138,45 +138,50 @@
       ]
     },
     {
-      "title": "Befehle im CMD",
+      "title": "Befehle im Terminal",
       "icon": "faLayerGroup",
-      "link": "/topics/topic3",
+      "link": "/topics/terminal",
       "unterthemen": [
         {
-          "title": "Task auf Port ... beenden",
-          "link": "/subtopics/subtopic3-3",
+          "title": "Die rolle des Terminals bei Linux",
+          "link": "/subtopics/terminal-info",
+          "unterthemen": []
+        },
+        {
+          "title": "Task auf Port beenden",
+          "link": "/subtopics/stop-task",
           "unterthemen": []
         },
         {
           "title": "Operatoren",
-          "link": "/subtopics/subtopic3-3",
+          "link": "/subtopics/operatoren",
           "unterthemen": [ {
             "title": "| Pipe",
-            "link": "/undersubtopics/undersubtopic3-4-1",
+            "link": "/undersubtopics/pipe",
             "unterthemen": []
           },
           {
             "title": "> Umleitung",
-            "link": "/undersubtopics/undersubtopic3-4-2",
+            "link": "/undersubtopics/umleitung-erstellen",
             "unterthemen": []
           },{
             "title": ">> Umleitung",
-            "link": "/undersubtopics/undersubtopic3-4-1",
+            "link": "/undersubtopics/umleitung-hinzufügen",
             "unterthemen": []
           }]
         },
         {
           "title": "Herunterfahren & Reboot",
-          "link": "/subtopics/subtopic3-4",
+          "link": "/subtopics/herunterfahren-reboot",
           "unterthemen": [
             {
               "title": "Herunterfahren",
-              "link": "/undersubtopics/undersubtopic3-4-1",
+              "link": "/undersubtopics/shut-down",
               "unterthemen": []
             },
             {
               "title": "Reboot",
-              "link": "/undersubtopics/undersubtopic3-4-2",
+              "link": "/undersubtopics/reboot",
               "unterthemen": []
             }
           ]
