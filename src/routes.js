@@ -28,6 +28,12 @@ import Kali from './pages/undersubtopics/Kali-Linux';
 import Mint from './pages/undersubtopics/Mint-Linux';
 import Ubuntu from './pages/undersubtopics/Ubuntu-Linux';
 
+//Packete
+import Package from './pages/topics/Package';
+import WhatArePackages from './pages/subtopics/WhatArePackages';
+import AptInstall from './pages/subtopics/AptInstall';
+import AptRemove from './pages/subtopics/AptRemove';
+
 const RoutesConfig = () => (
   <React.Fragment>
     <Route path="/" element={<Home />} />
@@ -55,7 +61,11 @@ const RoutesConfig = () => (
     <Route path="/undersubtopics/Kali" element={<Kali />} />
     <Route path="/undersubtopics/Arch" element={<ArchLinux />} />
 
-    
+    <Route path="/topics/package" element={<Package />} />
+    <Route path="/subtopics/package-info" element={<WhatArePackages />} />
+    <Route path="/subtopics/package-install" element={<AptInstall />} />
+    <Route path="/subtopics/package-remove" element={<AptRemove />} />
+
   </React.Fragment>
 );
 

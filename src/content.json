@@ -228,21 +228,21 @@
     },{
       "title": "Packete",
       "icon": "faLayerGroup",
-      "link": "/topics/user",
+      "link": "/topics/package",
       "unterthemen": [
         {
           "title": "Was sind Packete?",
-          "link": "/subtopics/kali",
+          "link": "/subtopics/package-info",
           "unterthemen": []
         },
         {
           "title": "Packete installieren",
-          "link": "/subtopics/firstDistribution",
+          "link": "/subtopics/package-install",
           "unterthemen": []
         },
         {
           "title": "Pakete löschen",
-          "link": "/subtopics/LinusTorvalds",
+          "link": "/subtopics/package-remove",
           "unterthemen": []
         }
       ]    
