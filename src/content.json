@@ -39,80 +39,218 @@
       ]
     },
     {
-      "title": "Thema 2",
+      "title": "Dateisystem",
       "icon": "faLayerGroup",
-      "link": "/topics/topic2",
+      "link": "/topics/directory",
       "unterthemen": [
         {
-          "title": "Unterthema 2-1",
-          "link": "/subtopics/subtopic21",
+          "title": "Aufbau",
+          "link": "/subtopics/structure",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 2-1",
-          "link": "/subtopics/subtopic2-1",
+          "title": "Wichtige Verzeichnisse",
+          "link": "/subtopics/important-directorys",
           "unterthemen": [
             {
-              "title": "Endthema 2-1-1",
-              "link": "/undersubtopics/undersubtopic2-1-1",
+              "title": "/ (root)",
+              "link": "/undersubtopics/root",
+              "unterthemen": []
+            }
+          ,
+            {
+              "title": "/boot",
+              "link": "/undersubtopics/boot",
+              "unterthemen": []
+            },
+            {
+              "title": "/etc",
+              "link": "/undersubtopics/boot",
+              "unterthemen": []
+            },
+            {
+              "title": "/home",
+              "link": "/undersubtopics/home",
+              "unterthemen": []
+            },
+            {
+              "title": "/dev",
+              "link": "/undersubtopics/dev",
+              "unterthemen": []
+            },
+            {
+              "title": "/bin",
+              "link": "/undersubtopics/bin",
+              "unterthemen": []
+            },
+            {
+              "title": "/usr",
+              "link": "/undersubtopics/usr",
+              "unterthemen": []
+            },
+            {
+              "title": "/proc",
+              "link": "/undersubtopics/proc",
+              "unterthemen": []
+            },
+            {
+              "title": "/mnt",
+              "link": "/undersubtopics/mnt",
+              "unterthemen": []
+            },
+            {
+              "title": "/sys",
+              "link": "/undersubtopics/sys",
+              "unterthemen": []
+            },
+            {
+              "title": "/tmp",
+              "link": "/undersubtopics/tmp",
               "unterthemen": []
             }
           ]
         },
         {
-          "title": "Unterthema 2-2",
-          "link": "/subtopics/subtopic2-2",
+          "title": "Befehle im Terminal",
+          "link": "/subtopics/DirPromts",
+          "unterthemen": [{
+            "title": "Navigation",
+            "link": "/undersubtopics/nav",
+            "unterthemen": []
+          },
+          {
+            "title": "Erstellen",
+            "link": "/undersubtopics/createFile",
+            "unterthemen": []
+          }
+        ]
+        },
+        {
+          "title": "Dateiverwaltung",
+          "link": "/subtopics/chmod",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 2-3",
-          "link": "/subtopics/subtopic2-3",
-          "unterthemen": []
-        },
-        {
-          "title": "Unterthema 2-4",
-          "link": "/subtopics/subtopic2-4",
+          "title": "Alles löschen",
+          "link": "/subtopics/rm",
           "unterthemen": []
         }
       ]
     },
     {
-      "title": "Thema 3",
+      "title": "Befehle im Terminal",
       "icon": "faLayerGroup",
-      "link": "/topics/topic3",
+      "link": "/topics/terminal",
       "unterthemen": [
         {
-          "title": "Unterthema 3-1",
-          "link": "/subtopics/subtopic3-1",
+          "title": "Die rolle des Terminals bei Linux",
+          "link": "/subtopics/terminal-info",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 3-2",
-          "link": "/subtopics/subtopic3-2",
+          "title": "Task auf Port beenden",
+          "link": "/subtopics/stop-task",
           "unterthemen": []
         },
         {
-          "title": "Unterthema 3-3",
-          "link": "/subtopics/subtopic3-3",
-          "unterthemen": []
+          "title": "Operatoren",
+          "link": "/subtopics/operatoren",
+          "unterthemen": [ {
+            "title": "| Pipe",
+            "link": "/undersubtopics/pipe",
+            "unterthemen": []
+          },
+          {
+            "title": "> Umleitung",
+            "link": "/undersubtopics/umleitung-erstellen",
+            "unterthemen": []
+          },{
+            "title": ">> Umleitung",
+            "link": "/undersubtopics/umleitung-hinzufügen",
+            "unterthemen": []
+          }]
         },
         {
-          "title": "Unterthema 3-4",
-          "link": "/subtopics/subtopic3-4",
+          "title": "Herunterfahren & Reboot",
+          "link": "/subtopics/herunterfahren-reboot",
           "unterthemen": [
             {
-              "title": "Endthema 3-4-1",
-              "link": "/undersubtopics/undersubtopic3-4-1",
+              "title": "Herunterfahren",
+              "link": "/undersubtopics/shut-down",
               "unterthemen": []
             },
             {
-              "title": "Endthema 3-4-2",
-              "link": "/undersubtopics/undersubtopic3-4-2",
+              "title": "Reboot",
+              "link": "/undersubtopics/reboot",
               "unterthemen": []
             }
           ]
         }
       ]
+    }
+    
+    ,{
+      "title": "Distributionen und Geschichte",
+      "icon": "faLayerGroup",
+      "link": "/topics/directory",
+      "unterthemen": [
+        {
+          "title": "Das erste Linux Betriebssystem",
+          "link": "/subtopics/erstes-Linux",
+          "unterthemen": []
+        },
+        {
+          "title": "Linus Torvalds",
+          "link": "/subtopics/Linus-Torvalds",
+          "unterthemen": []
+        },{
+          "title": "Distributionen",
+          "link": "/subtopics/Distributionen",
+          "unterthemen": [{
+            "title": "Debian",
+            "link": "/undersubtopics/Debian",
+            "unterthemen": []
+          },
+          {
+            "title": "Ubuntu",
+            "link": "/undersubtopics/Ubuntu",
+            "unterthemen": []
+          },{
+            "title": "Mint",
+            "link": "/undersubtopics/Mint",
+            "unterthemen": []
+          },{
+            "title": "Kali",
+            "link": "/undersubtopics/Kali",
+            "unterthemen": []
+          },{
+            "title": "Arch Linux",
+            "link": "/undersubtopics/Arch",
+            "unterthemen": []
+          }]
+        }
+      ]    
+    },{
+      "title": "Packete",
+      "icon": "faLayerGroup",
+      "link": "/topics/package",
+      "unterthemen": [
+        {
+          "title": "Was sind Packete?",
+          "link": "/subtopics/package-info",
+          "unterthemen": []
+        },
+        {
+          "title": "Packete installieren",
+          "link": "/subtopics/package-install",
+          "unterthemen": []
+        },
+        {
+          "title": "Pakete löschen",
+          "link": "/subtopics/package-remove",
+          "unterthemen": []
+        }
+      ]    
     }
   ]
 }

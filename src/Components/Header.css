@@ -82,6 +82,13 @@ header {
     align-items: center;
 }
 
+.right-position {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .search-section {
     height: 100%;
     position: absolute;
@@ -105,7 +112,8 @@ input {
     padding-left: 40px;
     font-family: "Impact", serif;
     background: linear-gradient(109.6deg, rgb(255, 194, 48) 11.2%, rgb(255, 124, 0) 100.2%);
-    box-shadow: 0 4px 6px rgba(0.2, 0, 0, 0.2); /* Schatten */
+    box-shadow: 0 4px 6px rgba(0.2, 0, 0, 0.2);
+    /* Schatten */
 }
 
 :placeholder-shown {
@@ -186,7 +194,7 @@ input {
 
 .dark-mode input {
     background: linear-gradient(109.6deg, #0026B9 11.2%, #00145D 100.2%);
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, .3); 
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, .3);
 }
 
 .dark-mode .search-dropdown {
@@ -199,6 +207,46 @@ input {
 }
 
 .dark-mode .title-section {
-    text-shadow: 0 0  3px white;
+    text-shadow: 0 0 3px white;
 }
+
 /*  Darkmode Styles END */
+
+.toggle_darkmode {
+    height: 40px;
+    color: white;
+    z-index: 9999;
+    margin-right: 20%;
+    background-color: orange;
+    border: 3px solid orange;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px white;
+    text-shadow: 0 0 1px white;
+    transition: background-color 250ms, border 250ms, border-radius 250ms, text-shadow 200ms, box-shadow 200ms, color 200ms;
+}
+
+.toggle_darkmode:hover {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid orange;
+    text-shadow: 0 0 1px orange;
+    box-shadow: 1px 1px 10px orange;
+    color: orange;
+}
+
+.dark-mode .toggle_darkmode {
+    color: #000000;
+    background-color: #0026B9;
+    border: 3px solid #000000;
+    box-shadow: 1px 1px 5px #000000;
+    text-shadow: 0 0 1px #000000;
+}
+
+.dark-mode .toggle_darkmode:hover {
+    background-color: #000000;
+    border: 3px solid #0026B9;
+    text-shadow: 0 0 1px #0026B9;
+    box-shadow: 1px 1px 10px #0026B9;
+    color: #0026B9;
+}
