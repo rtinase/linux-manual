@@ -111,7 +111,7 @@
           ]
         },
         {
-          "title": "Befehle im CMD",
+          "title": "Befehle im Terminal",
           "link": "/subtopics/DirPromts",
           "unterthemen": [{
             "title": "Navigation",
@@ -138,96 +138,119 @@
       ]
     },
     {
-      "title": "Befehle im CMD",
+      "title": "Befehle im Terminal",
       "icon": "faLayerGroup",
-      "link": "/topics/topic3",
+      "link": "/topics/terminal",
       "unterthemen": [
         {
-          "title": "Unterthema 3-1",
-          "link": "/subtopics/subtopic3-1",
+          "title": "Die rolle des Terminals bei Linux",
+          "link": "/subtopics/terminal-info",
           "unterthemen": []
         },
         {
-          "title": "",
-          "link": "/subtopics/subtopic3-2",
+          "title": "Task auf Port beenden",
+          "link": "/subtopics/stop-task",
           "unterthemen": []
         },
         {
           "title": "Operatoren",
-          "link": "/subtopics/subtopic3-3",
+          "link": "/subtopics/operatoren",
           "unterthemen": [ {
-            "title": "|",
-            "link": "/undersubtopics/undersubtopic3-4-1",
+            "title": "| Pipe",
+            "link": "/undersubtopics/pipe",
             "unterthemen": []
           },
           {
-            "title": ">",
-            "link": "/undersubtopics/undersubtopic3-4-2",
+            "title": "> Umleitung",
+            "link": "/undersubtopics/umleitung-erstellen",
             "unterthemen": []
           },{
-            "title": ">>",
-            "link": "/undersubtopics/undersubtopic3-4-1",
+            "title": ">> Umleitung",
+            "link": "/undersubtopics/umleitung-hinzufügen",
             "unterthemen": []
           }]
         },
         {
           "title": "Herunterfahren & Reboot",
-          "link": "/subtopics/subtopic3-4",
+          "link": "/subtopics/herunterfahren-reboot",
           "unterthemen": [
             {
               "title": "Herunterfahren",
-              "link": "/undersubtopics/undersubtopic3-4-1",
+              "link": "/undersubtopics/shut-down",
               "unterthemen": []
             },
             {
               "title": "Reboot",
-              "link": "/undersubtopics/undersubtopic3-4-2",
+              "link": "/undersubtopics/reboot",
               "unterthemen": []
             }
           ]
         }
       ]
-    },{
+    }
+    
+    ,{
       "title": "Distributionen und Geschichte",
       "icon": "faLayerGroup",
-      "link": "/topics/user",
+      "link": "/topics/directory",
       "unterthemen": [
         {
           "title": "Das erste Linux Betriebssystem",
-          "link": "/subtopics/firstDistribution",
+          "link": "/subtopics/erstes-Linux",
           "unterthemen": []
         },
         {
           "title": "Linus Torvalds",
-          "link": "/subtopics/LinusTorvalds",
+          "link": "/subtopics/Linus-Torvalds",
           "unterthemen": []
         },{
           "title": "Distributionen",
-          "link": "/subtopics/kali",
+          "link": "/subtopics/Distributionen",
           "unterthemen": [{
             "title": "Debian",
-            "link": "/subtopics/kali",
+            "link": "/undersubtopics/Debian",
             "unterthemen": []
           },
           {
             "title": "Ubuntu",
-            "link": "/subtopics/ubuntu",
+            "link": "/undersubtopics/Ubuntu",
             "unterthemen": []
           },{
             "title": "Mint",
-            "link": "/subtopics/mint",
+            "link": "/undersubtopics/Mint",
             "unterthemen": []
           },{
             "title": "Kali",
-            "link": "/subtopics/kali",
+            "link": "/undersubtopics/Kali",
             "unterthemen": []
           },{
             "title": "Arch Linux",
-            "link": "/subtopics/arch",
+            "link": "/undersubtopics/Arch",
             "unterthemen": []
           }]
         }
-      ]
+      ]    
+    },{
+      "title": "Packete",
+      "icon": "faLayerGroup",
+      "link": "/topics/package",
+      "unterthemen": [
+        {
+          "title": "Was sind Packete?",
+          "link": "/subtopics/package-info",
+          "unterthemen": []
+        },
+        {
+          "title": "Packete installieren",
+          "link": "/subtopics/package-install",
+          "unterthemen": []
+        },
+        {
+          "title": "Pakete löschen",
+          "link": "/subtopics/package-remove",
+          "unterthemen": []
+        }
+      ]    
     }
   ]
 }
