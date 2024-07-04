@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Header() {
     var [searchQuery, setSearchQuery] = useState('');
@@ -46,10 +46,6 @@ function Header() {
         return filteredResults.length > 0 ? filteredResults : ['No Result'];
     };
 
-    const onLogoClicked = () => {
-        window.location.href = "/";
-    };
-
     const handleResultClick = (page) => {
         setSearchQuery("");
         setShowDropdown(false);
@@ -81,7 +77,9 @@ function Header() {
         <header>
             <div className="logo-block">
                 <div className="logo-section">
-                    <img className="logo" src="./Data/logo.png" alt="Logo" onClick={onLogoClicked} />
+                    <Link to="/">
+                        <img className="logo" src="./Data/logo.png" alt="Logo" />
+                    </Link>
                 </div>
                 <div className="title-section">
                     Linux Handbuch
