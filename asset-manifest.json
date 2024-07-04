@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/linux-manual/static/css/main.2f176594.css",
+    "main.js": "/linux-manual/static/js/main.d77878ed.js",
+    "static/js/453.e5c24fac.chunk.js": "/linux-manual/static/js/453.e5c24fac.chunk.js",
+    "index.html": "/linux-manual/index.html",
+    "main.2f176594.css.map": "/linux-manual/static/css/main.2f176594.css.map",
+    "main.d77878ed.js.map": "/linux-manual/static/js/main.d77878ed.js.map",
+    "453.e5c24fac.chunk.js.map": "/linux-manual/static/js/453.e5c24fac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f176594.css",
+    "static/js/main.d77878ed.js"
+  ]
+}
