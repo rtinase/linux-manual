@@ -85,7 +85,7 @@ body {
 /* Darkmode Style START */
 .dark-mode .sidebar {
   background: #000000;
-  border-right: 1px solid #000000;
+  border-right: 1px solid blue;
 }
 
 .dark-mode .menu-item a,
@@ -99,4 +99,35 @@ body {
   color: #ffffff;
 }
 
-/* Darkmode Style END */
+.dark-mode .toggle_darkmode {
+  color: #000000;
+  background-color: #0026B9;
+  border: 3px solid #000000;
+  box-shadow: 1px 1px 5px #000000;
+  text-shadow: 0 0 1px #000000;
+}
+
+.dark-mode .toggle_darkmode:hover {
+  background-color: #000000;
+  border: 3px solid #0026B9;
+  text-shadow: 0 0 1px #0026B9;
+  box-shadow: 1px 1px 10px #0026B9;
+  color: #0026B9;
+}
+
+.dark-mode .scroll-to-top {
+  background: linear-gradient(99deg, #0026B9 14.7%, #00145D 73%);
+}
+
+.dark-mode .scroll-to-top .fa-arrow-up {
+  color: white;
+}
+
+.dark-mode .toggle-button {
+  background: linear-gradient(99deg, #00145D 14.7%, #0026B9 73%);
+}
+
+.dark-mode .menu-item a:hover, .submenu-item a:hover {
+  background: linear-gradient(99deg, #00145D 20%, #0336ff 85%);
+}
+

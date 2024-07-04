@@ -1,3 +1,4 @@
+
 .home-container {
   top: 8vh;
   padding: 20px;
@@ -9,7 +10,7 @@
 }
 
 .home-hero {
-  background: linear-gradient(120deg, #FFA200, #F3D102);
+  background: linear-gradient(120deg, #ffa200, #ffc64b);
   color: white;
   text-align: center;
   border-radius: 50px;
